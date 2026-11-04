@@ -1,0 +1,13 @@
+@agent-starters/ui
+Copyright (c) 2026 Creative Tim. Licensed under the MIT License (see LICENSE).
+
+The chat components in src/elements/ are adapted from Vercel AI Elements
+(https://github.com/vercel/ai-elements), Copyright 2023 Vercel, Inc.,
+licensed under the Apache License, Version 2.0 (see LICENSE-AI-ELEMENTS).
+Each adapted file says at its top what was changed.
+
+The primitives in src/components/ are adapted from shadcn/ui
+(https://github.com/shadcn-ui/ui), MIT License, Copyright (c) 2023 shadcn.
+
+npm dependencies and their licenses are listed in package.json and
+pnpm-lock.yaml.

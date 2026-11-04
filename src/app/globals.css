@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@import "@agent-starters/ui/styles.css";
+
+/* The shared components' classes live in the ui package. */
+@source "../../packages/ui/src";

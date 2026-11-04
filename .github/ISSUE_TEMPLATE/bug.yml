@@ -1,0 +1,39 @@
+name: Bug report
+description: Something does not work as described
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Runtime
+      options: [Lite (pnpm dev), Hermes (docker compose)]
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options: [DEMO (no model key), Live]
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model route and model
+      placeholder: "CompanyFabric companyfabric/auto, OpenAI gpt-5.5, local…"
+  - type: input
+    id: search
+    attributes:
+      label: Search provider
+      placeholder: "parallel, exa, companyfabric"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove keys and personal data first.

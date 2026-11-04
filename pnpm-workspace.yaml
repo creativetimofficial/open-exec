@@ -1,0 +1,3 @@
+# The app is the root package; the shared kit and UI are vendored here.
+packages:
+  - packages/*

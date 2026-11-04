@@ -1,0 +1,37 @@
+Open Exec
+Copyright (c) 2026 Creative Tim. Licensed under the MIT License (see LICENSE).
+
+This project uses, but does not include, the following services and software.
+Each is governed by its own license or terms:
+
+- Gmail API and Google Calendar API (Google), used under Google's API terms
+  with the OAuth client you create and connect.
+- Hermes Agent (NousResearch/hermes-agent), MIT License, run as a separate
+  container image when RUNTIME=hermes.
+- Parallel Search MCP (search.parallel.ai), Exa (api.exa.ai) and CompanyFabric
+  (api.companyfabric.com): third-party services, used under their own terms
+  when you configure them.
+
+The sample mailbox and calendar are fictional; any resemblance to real people
+or companies is coincidental.
+
+npm dependencies and their licenses are listed in package.json and
+pnpm-lock.yaml.
+
+---
+
+packages/ui:
+
+@agent-starters/ui
+Copyright (c) 2026 Creative Tim. Licensed under the MIT License (see LICENSE).
+
+The chat components in src/elements/ are adapted from Vercel AI Elements
+(https://github.com/vercel/ai-elements), Copyright 2023 Vercel, Inc.,
+licensed under the Apache License, Version 2.0 (see LICENSE-AI-ELEMENTS).
+Each adapted file says at its top what was changed.
+
+The primitives in src/components/ are adapted from shadcn/ui
+(https://github.com/shadcn-ui/ui), MIT License, Copyright (c) 2023 shadcn.
+
+npm dependencies and their licenses are listed in package.json and
+pnpm-lock.yaml.

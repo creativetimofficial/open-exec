@@ -1,0 +1,52 @@
+# Hermes Agent configuration for Open Exec (Hermes v0.22.5).
+#
+# The model: any OpenAI-compatible endpoint. CompanyFabric by default; for
+# OpenAI use https://api.openai.com/v1 and an OpenAI model id, for a local
+# server its URL. The key is read from OPENAI_API_KEY in the container env.
+model:
+  provider: custom
+  default: companyfabric/auto
+  base_url: https://api.companyfabric.com/v1
+  key_env: OPENAI_API_KEY
+  # Names this app to CompanyFabric for per-app usage, as the lite runtime
+  # does (kit/src/runtime/lite.ts). Other providers ignore it. Hermes sends
+  # model.default_headers on every model call. Keep the version in step
+  # with src/lib/agent.ts.
+  default_headers:
+    X-CF-App: open-exec@0.1.0
+
+# The assistant's tools are the app's own (Gmail, Calendar, web search),
+# served over MCP so every call goes through the app's policies, approvals and
+# audit, and Google tokens never leave the app. The app does its own
+# approvals, so Hermes trusts this server. Hermes' own Google Workspace skill
+# is not used: its calls would bypass those policies.
+mcp_servers:
+  app:
+    url: http://app:3000/api/mcp
+    headers:
+      Authorization: "Bearer ${TOOL_TOKEN}"
+    trust: full
+    timeout: 360          # a call can wait up to 300 s for a person's approval
+    connect_timeout: 30
+    tools:
+      resources: false
+      prompts: false
+
+# What Hermes itself may do when driven through its API server. Its own web
+# search is off (the app's search_web keeps citations and audit in one place);
+# terminal, files, browser and code execution are off for an assistant that
+# reads your mail.
+# To give the agent a sandboxed computer, remove terminal / file / browser
+# from disabled_toolsets; Hermes then asks for approval on risky commands.
+platform_toolsets:
+  api_server: [todo, memory, session_search, app]
+agent:
+  disabled_toolsets: [terminal, file, browser, code_execution, delegation, cronjob, image_gen, tts, web]
+
+approvals:
+  mode: manual
+  timeout: 300
+  unattended_mode: deny
+
+security:
+  redact_secrets: true
