@@ -1,5 +1,31 @@
 # Open Exec
 
+<p align="center">
+  <a href="https://www.creative-tim.com/ui/agent-starters?ref=open-exec_readme#open-exec">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://www.creative-tim.com/ui/agent-starters/open-exec/hero-dark.webp">
+      <img src="https://www.creative-tim.com/ui/agent-starters/open-exec/hero-light.webp" alt="Open Exec running its labelled demo" width="100%">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license"></a>
+  <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16-black" alt="Next.js 16"></a>
+  <a href="https://github.com/NousResearch/hermes-agent"><img src="https://img.shields.io/badge/runs%20on-lite%20loop%20or%20Hermes%20Agent-blue" alt="Runs on a lite loop or Hermes Agent"></a>
+  <a href="https://www.creative-tim.com/?ref=open-exec_readme"><img src="https://img.shields.io/badge/by-Creative%20Tim-orange" alt="By Creative Tim"></a>
+</p>
+
+<p align="center">
+  <a href="https://www.creative-tim.com/ui/agent-starters?ref=open-exec_readme#open-exec"><b>Live page</b></a> ·
+  <a href="https://www.creative-tim.com/ui/agent-starters?ref=open-exec_readme">All agent starters</a> ·
+  <a href="https://www.creative-tim.com/ui/hermes?ref=open-exec_readme">Hosted Hermes agents</a> ·
+  <a href="https://www.creative-tim.com/ui/build?ref=open-exec_readme">AI App Builder</a> ·
+  <a href="https://companyfabric.com/templates/open-exec?ref=open-exec_readme">On CompanyFabric</a> ·
+  <a href="https://companyfabric.com/dashboard/keys?ref=open-exec_readme">Get a model key</a>
+</p>
+
+
 An open-source executive assistant for your Gmail and Google Calendar. It triages the inbox, reads the threads that matter, finds free time, drafts replies and puts events on your calendar. Anything it saves waits for your approval first, and nothing is ever sent: replies land in Gmail as drafts, and you press Send.
 
 Every tool call goes through one tool layer that applies the assistant's policy, asks you before anything the policy gates, and writes an audit row first. The policies also decide which Google permissions are requested: deny a tool in `assistant.config.ts` and Connect Google stops asking for its scope.
@@ -104,10 +130,46 @@ Not affiliated with Google, or with any company whose products offer AI assistan
 
 ## More open-source agent starters
 
+Free and MIT, from the same kit: one tool layer, approvals, an audit log, and a labelled demo with no keys. See them all on the [agent starters page](https://www.creative-tim.com/ui/agent-starters?ref=open-exec_readme).
+
 | | |
 |---|---|
 | [Open Research](https://github.com/creativetimofficial/open-research?ref=open-exec_readme) | Research with numbered citations you can check |
 | [Open Coworkers](https://github.com/creativetimofficial/open-coworkers?ref=open-exec_readme) | Specialist AI coworkers with their own permissions and hand-offs |
-| [Social Autopilot](https://github.com/creativetimofficial/open-social?ref=open-exec_readme) | Research, write and schedule posts for your channels |
+| [Social Autopilot](https://www.creative-tim.com/ui/agent-starters?ref=open-exec_readme#open-social) (coming soon) | Research, write and schedule posts for your channels |
+
+## More from Creative Tim
+
+Want it without running anything yourself? These are live on [creative-tim.com](https://www.creative-tim.com/?ref=open-exec_readme).
+
+**Build with AI**
+
+| | |
+|---|---|
+| [AI App Builder](https://www.creative-tim.com/ui/build?ref=open-exec_readme) | Websites, dashboards, slide decks and ads from one prompt. Edit right on the page, deploy in one click. |
+| [App examples](https://www.creative-tim.com/ui/examples?ref=open-exec_readme) | Finished apps to remix as your starting point |
+| [Discover](https://www.creative-tim.com/ui/discover?ref=open-exec_readme) | Apps other people built, ready to remix |
+| [AI Video Studio](https://www.creative-tim.com/ui/build/video-ecomm?ref=open-exec_readme) | One product photo in; product images and a short video out |
+
+**Hosted agents**
+
+| | |
+|---|---|
+| [Hermes Agent hosting](https://www.creative-tim.com/ui/hermes?ref=open-exec_readme) | A Hermes agent with memory and web tools, running in the cloud |
+| [Spawn an AI agent](https://www.creative-tim.com/ui/spawn-agent?ref=open-exec_readme) | Any role you need, in a minute |
+| [Hire an AI employee](https://www.creative-tim.com/ui/hire-ai-employee?ref=open-exec_readme) | Ready-made roles that are always on |
+
+**For developers**
+
+| | |
+|---|---|
+| [Skills.md & Stacks](https://www.creative-tim.com/ui/skills?ref=open-exec_readme) | Skills for Claude Code, Cursor and Codex |
+| [Creative Tim UI](https://www.creative-tim.com/ui/blocks?ref=open-exec_readme) | shadcn/ui blocks for your app, v0 and Lovable |
+| [Registry and MCP](https://www.creative-tim.com/ui/docs/registry?ref=open-exec_readme) | Install the blocks from coding agents over MCP |
+| [Claude Code guide](https://www.creative-tim.com/ui/learn/claude-code?ref=open-exec_readme) | From your first prompt to agents that ship |
+| [AI tool comparisons](https://www.creative-tim.com/ui/compare?ref=open-exec_readme) and [cheatsheets](https://www.creative-tim.com/ui/cheatsheet?ref=open-exec_readme) | Pick the right tool, and its shortcuts on one page |
+| [CompanyFabric](https://companyfabric.com/?ref=open-exec_readme) | One key for every major model, the default model route for this starter: [get a key](https://companyfabric.com/dashboard/keys?ref=open-exec_readme), [models and pricing](https://companyfabric.com/models?ref=open-exec_readme) |
+| [CompanyFabric templates](https://companyfabric.com/templates?ref=open-exec_readme) | This starter and the others, ready to run with your CompanyFabric key |
+| [Premium templates](https://www.creative-tim.com/templates/premium?ref=open-exec_readme) | React, Next.js, Vue and HTML templates and dashboards |
 
 Contributing: see [CONTRIBUTING.md](CONTRIBUTING.md). Security: see [SECURITY.md](SECURITY.md).
